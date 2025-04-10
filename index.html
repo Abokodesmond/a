@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arxyn</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/butler" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hamburger.css" />
+    <link rel="stylesheet" href="queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay" id="overlay"></div>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav class="slide-menu" id="slideMenu">
+        <div class="close-btn" id="closeBtn">&times;</div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+
+      <div class="nav-logo">
+        <img class="logo" src="assets/img/Arxyn-logo.jpg" alt="Arxyn Logo" />
+      </div>
+
+      <nav class="nav-bar">
+        <a class="user account" href="#"
+          ><ion-icon name="person-outline" class="nav-icon"></ion-icon
+        ></a>
+        <button class="search-btn">
+          <ion-icon name="search-outline" class="nav-icon"></ion-icon>
+        </button>
+        <button class="cart-btn"><span class="cart-count">0</span></button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="slider-container" id="sliderContainer">
+          <div class="slider-track" id="sliderTrack">
+            <img src="/assets/works/w-1.jpg" alt="Slide 1" />
+            <img src="/assets/works/w-2.jpg" alt="Slide 2" />
+            <img src="/assets/works/w-3.jpg" alt="Slide 3" />
+            <img src="/assets/works/w-4.jpg" alt="Slide 4" />
+            <img src="/assets/works/w-5.jpg" alt="Slide 5" />
+            <img src="/assets/works/w-6.jpg" alt="Slide 6" />
+          </div>
+
+          <div class="slider-buttons">
+            <button onclick="prevSlide()">❮</button>
+            <button onclick="nextSlide()">❯</button>
+          </div>
+
+          <div class="indicators" id="indicators"></div>
+          <div class="slider-heading">
+            <h1>Discover Our New Collection</h1>
+            <p>High quality. Unique design. Limited stock.</p>
+          </div>
+          <a href="#checkout" class="cta-button">Go to Checkout</a>
+        </div>
+      </section>
+      <section class="about-section container">
+        <div class="about-heading">
+          <h2 class="heading-primary">NAJI-LAL <br />SAANI</h2>
+          <p class="subtitle">Architect</p>
+        </div>
+
+        <div class="about-box grid grid--3-cols">
+          <div class="about-img">
+            <img class="about-profile" src="about-profile.jpeg" alt="" />
+          </div>
+          <div class="about-text">
+            <p>
+              I'm Jorger Clarkson, an interior design architect based on San
+              Francisco, CA. I'm offers a full range of bespoke interior design
+              services aimed at a discerning and sophisticated international
+              clientele. The philosophy in my projects is to create a
+              contemporary yet timeless luxurious atmospher
+            </p>
+          </div>
+
+          <div class="about-socials">
+            <p>CONNECT</p>
+            <ul>
+              <li><a class="socials-link" href="#">Instagram</a></li>
+              <li><a class="socials-link" href="#">LinkedIn</a></li>
+              <li><a class="socials-link" href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="works-section container">
+        <h3 class="heading-secondary">WORKS</h3>
+        <div class="works-container grid grid--2-cols">
+          <div class="works">
+            <img src="assets/works/w-1.jpg" alt="" class="works-img" />
+          </div>
+          <div class="plan">
+            <p class="plan-description">Modern 4 Bedroom Double Storey House</p>
+            <p class="plan-price">From $417.60</p>
+
+            <div class="plan-features grid grid--3-cols">
+              <div class="floor">
+                <img src="icons/stairs-icon.png" alt="" />
+                <p>2 Floors</p>
+              </div>
+              <div class="bedroom">
+                <img src="icons/bedroom-icon.png" alt="" />
+                <p>4 Bedrooms</p>
+              </div>
+              <div>
+                <img src="icons/bathtub-icon.png" alt="" />
+                <p>6 Bathrooms</p>
+              </div>
+              <div class="rule">
+                <img src="icons/ruler-icon.png" alt="" />
+                <p>15m</p>
+              </div>
+              <div class="resize">
+                <img src="icons/resize-icon.png" alt="" />
+                <p>18m</p>
+              </div>
+              <div>
+                <img src="icons/location-icon.png" alt="" />
+                <p>464 Area</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="btn">Buy</button>
+            </div>
+          </div>
+          <div class="plan">
+            <p class="plan-description">Modern 4 Bedroom Double Storey House</p>
+            <p class="plan-price">From $417.60</p>
+
+            <div class="plan-features grid grid--3-cols">
+              <div class="floor">
+                <img src="icons/stairs-icon.png" alt="" />
+                <p>2 Floors</p>
+              </div>
+              <div class="bedroom">
+                <img src="icons/bedroom-icon.png" alt="" />
+                <p>4 Bedrooms</p>
+              </div>
+              <div>
+                <img src="icons/bathtub-icon.png" alt="" />
+                <p>6 Bathrooms</p>
+              </div>
+              <div class="rule">
+                <img src="icons/ruler-icon.png" alt="" />
+                <p>15m</p>
+              </div>
+              <div class="resize">
+                <img src="icons/resize-icon.png" alt="" />
+                <p>18m</p>
+              </div>
+              <div>
+                <img src="icons/location-icon.png" alt="" />
+                <p>464 Area</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="btn">Buy</button>
+            </div>
+          </div>
+          <div class="works w-img01">
+            <img
+              src="assets/works/w-2.jpg"
+              alt=""
+              class="works-img works-img01"
+            />
+          </div>
+          <div class="works">
+            <img src="assets/works/w-3.jpg" alt="" class="works-img" />
+          </div>
+          <div class="plan">
+            <p class="plan-description">Modern 4 Bedroom Double Storey House</p>
+            <p class="plan-price">From $417.60</p>
+
+            <div class="plan-features grid grid--3-cols">
+              <div class="floor">
+                <img src="icons/stairs-icon.png" alt="" />
+                <p>2 Floors</p>
+              </div>
+              <div class="bedroom">
+                <img src="icons/bedroom-icon.png" alt="" />
+                <p>4 Bedrooms</p>
+              </div>
+              <div>
+                <img src="icons/bathtub-icon.png" alt="" />
+                <p>6 Bathrooms</p>
+              </div>
+              <div class="rule">
+                <img src="icons/ruler-icon.png" alt="" />
+                <p>15m</p>
+              </div>
+              <div class="resize">
+                <img src="icons/resize-icon.png" alt="" />
+                <p>18m</p>
+              </div>
+              <div>
+                <img src="icons/location-icon.png" alt="" />
+                <p>464 Area</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="btn">Buy</button>
+            </div>
+          </div>
+          <div class="plan">
+            <p class="plan-description">Modern 4 Bedroom Double Storey House</p>
+            <p class="plan-price">From $417.60</p>
+
+            <div class="plan-features grid grid--3-cols">
+              <div class="floor">
+                <img src="icons/stairs-icon.png" alt="" />
+                <p>2 Floors</p>
+              </div>
+              <div class="bedroom">
+                <img src="icons/bedroom-icon.png" alt="" />
+                <p>4 Bedrooms</p>
+              </div>
+              <div>
+                <img src="icons/bathtub-icon.png" alt="" />
+                <p>6 Bathrooms</p>
+              </div>
+              <div class="rule">
+                <img src="icons/ruler-icon.png" alt="" />
+                <p>15m</p>
+              </div>
+              <div class="resize">
+                <img src="icons/resize-icon.png" alt="" />
+                <p>18m</p>
+              </div>
+              <div>
+                <img src="icons/location-icon.png" alt="" />
+                <p>464 Area</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="btn">Buy</button>
+            </div>
+          </div>
+          <div class="works w-img02">
+            <img src="assets/works/w-4.jpg" alt="" class="works-img" />
+          </div>
+          <div class="works">
+            <img src="assets/works/w-5.jpg" alt="" class="works-img" />
+          </div>
+          <div class="plan">
+            <p class="plan-description">Modern 4 Bedroom Double Storey House</p>
+            <p class="plan-price">From $417.60</p>
+
+            <div class="plan-features grid grid--3-cols">
+              <div class="floor">
+                <img src="icons/stairs-icon.png" alt="" />
+                <p>2 Floors</p>
+              </div>
+              <div class="bedroom">
+                <img src="icons/bedroom-icon.png" alt="" />
+                <p>4 Bedrooms</p>
+              </div>
+              <div>
+                <img src="icons/bathtub-icon.png" alt="" />
+                <p>6 Bathrooms</p>
+              </div>
+              <div class="rule">
+                <img src="icons/ruler-icon.png" alt="" />
+                <p>15m</p>
+              </div>
+              <div class="resize">
+                <img src="icons/resize-icon.png" alt="" />
+                <p>18m</p>
+              </div>
+              <div>
+                <img src="icons/location-icon.png" alt="" />
+                <p>464 Area</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="btn">Buy</button>
+            </div>
+          </div>
+          <div class="plan">
+            <p class="plan-description">Modern 4 Bedroom Double Storey House</p>
+            <p class="plan-price">From $417.60</p>
+
+            <div class="plan-features grid grid--3-cols">
+              <div class="floor">
+                <img src="icons/stairs-icon.png" alt="" />
+                <p>2 Floors</p>
+              </div>
+              <div class="bedroom">
+                <img src="icons/bedroom-icon.png" alt="" />
+                <p>4 Bedrooms</p>
+              </div>
+              <div>
+                <img src="icons/bathtub-icon.png" alt="" />
+                <p>6 Bathrooms</p>
+              </div>
+              <div class="rule">
+                <img src="icons/ruler-icon.png" alt="" />
+                <p>15m</p>
+              </div>
+              <div class="resize">
+                <img src="icons/resize-icon.png" alt="" />
+                <p>18m</p>
+              </div>
+              <div>
+                <img src="icons/location-icon.png" alt="" />
+                <p>464 Area</p>
+              </div>
+            </div>
+            <div class="button-container">
+              <button class="btn">Buy</button>
+            </div>
+          </div>
+          <div class="works w-img03">
+            <img src="assets/works/w-6.jpg" alt="" class="works-img" />
+          </div>
+        </div>
+      </section>
+      <section class="contact-section container grid grid--2-cols">
+        <div class="contact-box">
+          <p class="contact-heading">Contact Us</p>
+
+          <p class="contact-text">
+            Send us a message and we'll get back shortly.
+          </p>
+
+          <form class="contact-form" action="">
+            <label class="contact-form-label" for="">Name</label>
+
+            <input type="text" />
+
+            <label class="contact-form-label" for="Email">Email</label>
+
+            <input type="text" id="Email" />
+
+            <label class="contact-form-label">Message</label>
+
+            <textarea placeholder="Type your message..."></textarea>
+          </form>
+
+          <button class="btn contact-btn">Send</button>
+        </div>
+        <div class="map"></div>
+      </section>
+    </main>
+    <footer class="footer container">
+      <div class="footer-top">
+        <img src="assets/img/Arxyn-Logo.jpg" alt="Arxyn-Logo" class="logo" />
+        <ul class="footer-list-nav">
+          <li><a class="footer-list-link" href="#">About Us</a></li>
+          <li><a class="footer-list-link" href="#">Projects</a></li>
+          <li><a class="footer-list-link" href="#">Contact</a></li>
+        </ul>
+        <ul class="footer-socials">
+          <li>
+            <a class="footer-socials-link" href="#"
+              ><ion-icon class="footer-icon" name="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-socials-link" href="#"
+              ><ion-icon class="footer-icon" name="logo-instagram"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-socials-link" href="#"
+              ><ion-icon class="footer-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-socials-link" href="#"
+              ><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>2025 ARXYN Development. All right reserved.</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+        <p>Cookies Settings</p>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

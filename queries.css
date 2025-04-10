@@ -1,0 +1,181 @@
+/**************************/
+/* BELOW 1344px (smaller computers)*/
+/**************************/
+@media (max-width: 84em) {
+  /* work page */
+  .works-container {
+    column-gap: 3rem;
+    row-gap: 2.4rem;
+  }
+}
+/**************************/
+/* Below 1200px (landscape  tablets)*/
+/**************************/
+
+@media (max-width: 75em) {
+  /* about page */
+  html {
+    /* 9px/16px */
+    font-size: 56.5%;
+  }
+  .heading-primary {
+    font-size: 9.6rem;
+  }
+  .subtitle {
+    font-size: 4.8rem;
+  }
+}
+
+/**************************/
+/*  944px POTRAIT TABLET BELOW*/
+/**************************/
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading-primary {
+    font-size: 8rem;
+  }
+  .subtitle {
+    font-size: 3.2rem;
+  }
+
+  .logo {
+    height: 7rem;
+  }
+  .about-heading {
+    margin-bottom: 8rem;
+  }
+  .about-box {
+    line-height: 1.3;
+  }
+  .about-text {
+    font-size: 2rem;
+  }
+  .plan-features img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .works-container {
+    row-gap: 1.8rem;
+  }
+}
+/* 704px  for smaller Tablets  */
+@media (max-width: 44em) {
+  .hero-section {
+    margin-bottom: 8rem;
+  }
+  .user {
+    display: none;
+  }
+
+  .about-text p {
+    font-size: 1.6rem;
+  }
+  .plan-features {
+    margin-bottom: 0.9rem;
+  }
+  .plan-features img {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  .works-container {
+    row-gap: 1rem;
+    column-gap: 2;
+  }
+  .contact-heading,
+  .heading-secondary {
+    font-size: 2.4rem;
+  }
+  .plan-description {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .plan-price {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    padding: 1.2rem 4rem;
+  }
+
+  .contact-heading,
+  .contact-text {
+    margin-bottom: 1.5rem;
+  }
+
+  .map {
+    height: 370px;
+  }
+  input {
+    margin-bottom: 1.5rem;
+  }
+  textarea {
+    height: 8rem;
+  }
+  .contact-form-label,
+  .contact-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* 
+Below 544px(phones)
+*/
+@media (max-width: 34em) {
+  .hero-section {
+    margin-bottom: 6.4rem;
+  }
+  .about-heading {
+    margin-bottom: 6.2rem;
+  }
+  .heading-primary {
+    font-size: 6.4rem;
+  }
+  .about-box {
+    grid-template-columns: 1fr;
+  }
+  .about-text {
+    margin-bottom: 1.8rem;
+    max-width: 100%;
+  }
+  .about-socials {
+    text-align: center;
+  }
+  .works-container {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+  }
+  .w-img01 {
+    grid-row: 3;
+  }
+
+  .w-img02 {
+    grid-row: 7;
+  }
+  .w-img03 {
+    grid-row: 11;
+  }
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+  .map {
+    height: 200px;
+    grid-row: 1;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.8rem;
+  }
+  .footer-bottom {
+    gap: 1rem;
+  }
+  .footer-list-nav {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}
